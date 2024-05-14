@@ -52,18 +52,7 @@ const ModalAuth = () => {
         <div className="modal-content">
           {!loading && (
             <>
-              <div className="modal-content-header d-center">
-                {(stateAuth === "register" || stateAuth === "forgot") && (
-                  <button
-                    className="btn btn-return"
-                    onClick={() => {
-                      goBack();
-                    }}
-                  >
-                    <i className="bi bi-arrow-left-short"></i>
-                  </button>
-                )}
-
+              <div className="modal-content-header">
                 <button data-bs-dismiss="modal" className="btn-close"></button>
               </div>
 
@@ -73,6 +62,19 @@ const ModalAuth = () => {
                 {stateAuth === "login" && <FormLogin />}
                 {stateAuth === "register" && <FormRegister />}
                 {stateAuth === "forgot" && <FormForgot />}
+              </div>
+
+              <div className="modal-content-footer">
+                {(stateAuth === "register" || stateAuth === "forgot") && (
+                  <button
+                    className="btn btn-return"
+                    onClick={() => {
+                      goBack();
+                    }}
+                  >
+                    Voltar
+                  </button>
+                )}
               </div>
             </>
           )}

@@ -17,6 +17,24 @@ export const FAN_TOKEN = [
   {
     src: "/assets/svg/fans-token/fan-6.svg",
   },
+  {
+    src: "/assets/svg/fans-token/fan-6.svg",
+  },
+  {
+    src: "/assets/svg/fans-token/fan-6.svg",
+  },
+  {
+    src: "/assets/svg/fans-token/fan-6.svg",
+  },
+  {
+    src: "/assets/svg/fans-token/fan-6.svg",
+  },
+  {
+    src: "/assets/svg/fans-token/fan-6.svg",
+  },
+  {
+    src: "/assets/svg/fans-token/fan-6.svg",
+  },
 ];
 
 export const WORDS_FLAG = [

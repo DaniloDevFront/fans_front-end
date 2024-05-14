@@ -1,8 +1,16 @@
 import { HeaderComponent } from "@/app/components/components-core";
 import Image from "next/image";
 import React from "react";
+import { useDispatch } from "react-redux";
+import { stepAuth } from "@/app/shared/store/actions/auth.actions";
 
 export default function Index() {
+  const dispatch = useDispatch();
+
+  const action = (param: string) => {
+    dispatch(stepAuth(param));
+  };
+
   return (
     <>
       <HeaderComponent
@@ -34,11 +42,11 @@ export default function Index() {
               <i className="bi bi-cart3"></i>
             </button>
 
-            <button type="button" className="btn btn-login d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#modal-auth">
+            <button type="button" className="btn btn-login d-none d-lg-flex" onClick={() => action("login")} data-bs-toggle="modal" data-bs-target="#modal-auth">
               Entrar
             </button>
 
-            <button type="button" className="btn btn-primary btn-register d-none d-lg-flex">
+            <button type="button" className="btn btn-primary btn-register d-none d-lg-flex" onClick={() => action("register")} data-bs-toggle="modal" data-bs-target="#modal-auth">
               Cadastrar-se
             </button>
 

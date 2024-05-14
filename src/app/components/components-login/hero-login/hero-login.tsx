@@ -13,7 +13,7 @@ const HeroLogin = () => {
       <div className="hero-login-content">
         <Image src={"/assets/svg/logo-letter.svg"} className="logo-hero" alt="logo" width={1000} height={1000}></Image>
 
-        <Swiper spaceBetween={0} slidesPerView={"auto"} className="swiper-fans-token">
+        <Swiper spaceBetween={0} slidesPerView={"auto"} loop={true} className="swiper-fans-token">
           {FAN_TOKEN.map((item, index) => (
             <SwiperSlide key={index}>
               <Image src={item.src} className="fan-token" width={1000} height={1000} alt="fan-token"></Image>
