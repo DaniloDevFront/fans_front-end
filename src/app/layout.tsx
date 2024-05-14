@@ -4,7 +4,7 @@ import React from "react";
 import Head from "next/head";
 
 // COMPONENTS
-import { HeaderComponent, FooterComponent } from "@/app/components/components-core/";
+import { HeaderComponent } from "@/app/components/components-core/";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,7 +16,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       {/* <HeaderComponent /> */}
       <main className="main-content">{children}</main>
-      {/* <FooterComponent /> */}
     </>
   );
 }
