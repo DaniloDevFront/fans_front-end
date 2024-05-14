@@ -1,0 +1,33 @@
+@import "../../../theme/config/mixins.scss";
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 70px;
+  text-align: center;
+
+  @include media-lg {
+    padding-top: 24px;
+  }
+
+  .btn-auth {
+    margin-top: 44px;
+
+    @include media-lg {
+      margin-top: 24px;
+    }
+  }
+
+  .no-account {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    color: #989898;
+  }
+
+  form {
+    padding: 0 20px;
+  }
+}

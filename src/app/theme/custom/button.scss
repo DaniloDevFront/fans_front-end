@@ -1,0 +1,121 @@
+.btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  font-family: Montserrat;
+  color: var(--text-color-primary);
+
+  &:first-child:active {
+    color: var(--text-color-second);
+  }
+
+  &:focus-visible {
+    color: var(--text-color-second);
+  }
+
+  &:hover {
+    color: var(--text-color-second);
+  }
+}
+
+.btn-primary {
+  height: 50px;
+  background: var(--bg-button-primary);
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.8px;
+}
+
+.btn-return {
+  color: var(--text-color-primary);
+
+  i {
+    outline: none;
+    font-size: 24px;
+  }
+
+  &-dark {
+    color: var(--text-color-third);
+  }
+}
+
+.btn-forgot {
+  width: fit-content;
+  margin-top: 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  color: var(--text-color-third);
+
+  &:hover {
+    color: #5e5f9a;
+  }
+}
+
+.btn-password {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  transform: translateX(-50%);
+
+  i {
+    color: #bdbdbd;
+  }
+}
+
+.btn-nav {
+  width: 135px;
+  height: 40px;
+  justify-content: center;
+  padding: 8px 12px;
+  gap: 11px;
+  border-radius: 8px;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+
+  i {
+    font-size: 18px;
+  }
+
+  &.active {
+    background: var(--bg-button-second);
+    color: var(--text-color-third);
+  }
+}
+
+.btn-cart {
+  i {
+    font-size: 20px;
+  }
+}
+
+.btn-menu {
+  i {
+    font-size: 24px;
+  }
+}
+
+.btn-login {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+}
+
+.btn-register {
+  padding: 8px 16px;
+  height: 40px !important;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+}

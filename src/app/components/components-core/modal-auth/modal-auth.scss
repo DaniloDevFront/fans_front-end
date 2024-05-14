@@ -1,0 +1,32 @@
+@import "../../../theme/config/mixins.scss";
+
+.modal.show {
+  display: flex !important;
+  align-items: center;
+}
+
+.modal {
+  .modal-dialog {
+    width: 515px;
+
+    .modal-content {
+      padding-bottom: 58px;
+
+      @include media-lg {
+        padding-bottom: 24px;
+      }
+
+      &-header {
+        height: 56px;
+        justify-content: flex-end;
+        padding: 0 20px;
+      }
+
+      &-body {
+        .return {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}

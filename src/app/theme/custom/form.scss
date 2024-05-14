@@ -1,0 +1,22 @@
+.form-control {
+  height: 50px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #989898;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

@@ -1,0 +1,17 @@
+:root {
+  --bg-header: #090a3e;
+
+  --bg-button-primary: #171bff;
+  --bg-button-second: #e9f1ff;
+
+  --text-color-primary: #fafafa;
+  --text-color-second: #ccc;
+  --text-color-third: #171bff;
+  // --text-color-fourth: #
+  --text-color-error: #da604e;
+}
+
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;

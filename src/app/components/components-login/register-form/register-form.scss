@@ -1,0 +1,50 @@
+.form-login {
+  .no-account {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    color: #989898;
+  }
+
+  .card-instruction {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 16px;
+    padding: 10px;
+    background: #e9f1ff;
+    border-radius: 4px;
+
+    .d-center {
+      i {
+        color: #171bff;
+        font-size: 16px;
+      }
+    }
+
+    ul.list-instruction {
+      padding-left: 16px;
+      text-align: left;
+
+      li {
+        &::marker {
+          color: #3d3d3d;
+          font-size: 10px;
+        }
+
+        article {
+          font-family: Montserrat;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 19.6px;
+          color: #3d3d3d;
+        }
+      }
+    }
+  }
+}
